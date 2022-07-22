@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="load">
+        <h2>Weight Converter</h2>
+        <h3>Total Amount In LBS</h3>
+        <p id="total-load">45 LBS</p>
+        <p id="errorMsg"></p>
+        <p id="currentBar">Standard</p>
+        <button id="changeBarBtn" onclick="changeBar()">Change Bar</button>
+        <!-- <button id="barSettings" onclick="showBars()">Show All Barbells</button> -->
+    </div>
+
+    <!-- <div class="bars">
+        <ul>
+            <li>Olympic Barbell, 45 LBS</li>
+            <li>Cambered Swiss Bar, 38 LBS</li>
+            <li>Hex/Trap Bar, 54 LBS</li>
+            <li>Safety Squat Bar (SSB), 61 LBS</li>
+        </ul>
+    </div> -->
+
+    <div class="buttons">
+        <h3>Weights</h3>
+        <button id="red" onclick="addWeight(red)">Reds (25 KG)</button>
+        <button id="blue" onclick="addWeight(blue)">Blues (20 KG)</button>
+        <br>
+        <button id="yellow" onclick="addWeight(yellow)">Yellows (15 KG)</button>
+        <button id="green" onclick="addWeight(green)">Greens (10 KG)</button>
+        <br>
+        <button id="white" onclick="addWeight(white)">Whites (5 KG)</button>
+        <button id="black" onclick="addWeight(black)">Blacks (2.5 KG)</button>
+        <br>
+        <button id="silverLarge" onclick="addWeight(silverLarge)">Silvers LG (1.25 KG)</button>
+        <button id="silverSmall" onclick="addWeight(silverSmall)">Silvers SM (0.5 KG)</button>
+        <br>
+        <button id="reset" onclick="resetWeight()">RESET</button>
+        <button id="undo" onclick="undoPrevious()">UNDO</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
